@@ -4,18 +4,12 @@
 1. Clone this repository.
 
 ```
-git clone https://github.com/MobiDAX/baseapp.git
+git clone https://gitlab.tunex.io/reference-project/baseapp.git
 ```
 
-2. Goto repository's directory and switch to 'mobidax' branch:
+2. Customize it with your color and logo.
 
-```bash
-git checkout mobidax
-```
-
-3. Customize it with your color and logo.
-
-4. If you want to check your changes:
+3. If you want to check your changes:
 
 - create temporary file: /src/public/config/env.js
 
@@ -47,14 +41,14 @@ yarn install
 yarn start-mock
 ```
 
-5. Create own baseapp image
+4. Create own baseapp image
 
 ```
 docker build --tag <your-docker-store/your-frontend-image-name> .
 docker push <your-docker-store/your-frontend-image-name>
 ```
 
-6. In your Opendax (https://github.com/openware/opendax) in file /config/app.yml in section "images" change:
+5. In your Opendax (https://github.com/openware/opendax) in file /config/app.yml in section "images" change:
 
 ```
   peatio: quay.io/openware/peatio:2.4.19
